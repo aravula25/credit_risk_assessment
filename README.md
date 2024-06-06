@@ -10,5 +10,4 @@ The dataset used in this project involves various features related to personal f
 Logistic Regression
 
 # Tools used
-Jupyter Notebook
-Tableau
+Jupyter Notebook, Tableau
