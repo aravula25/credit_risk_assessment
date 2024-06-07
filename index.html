@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Default Prediction</title>
+</head>
+<body>
+    <h2>Loan Default Prediction Form</h2>
+    <form method="post">
+        Age: <input type="number" name="person_age"><br>
+        Income: <input type="number" name="person_income"><br>
+        Home Ownership: <input type="text" name="person_home_ownership"><br>
+        Employment Length: <input type="number" name="person_emp_length" step="0.1"><br>
+        Loan Amount: <input type="number" name="loan_amnt"><br>
+        Interest Rate: <input type="number" name="loan_int_rate" step="0.01"><br>
+        Loan Percent Income: <input type="number" name="loan_percent_income" step="0.01"><br>
+        Historical Default (Y/N): <input type="text" name="cb_person_default_on_file"><br>
+        Credit History Length: <input type="number" name="cb_person_cred_hist_length"><br>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction is defined %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+    {% if error is defined %}
+        <h3>Error: {{ error }}</h3>
+    {% endif %}
+</body>
+</html>
