@@ -1,4 +1,4 @@
-# Credit Risk Modelling & Assessment Project
+# Credit Risk Assessment Project
 
 # Project Overview
 This project focuses on predicting credit risk using machine learning models and assessment using data visualization. The objective is to accurately identify potential defaulters based on historical financial data, thereby aiding financial institutions in their decision-making processes.
